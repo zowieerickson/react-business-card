@@ -1,0 +1,124 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+#root {
+  height: 100%;
+  display: flex;
+  background-color: #23252Ced;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  max-width: 320px;
+  background-color: #1A1B21;
+}
+
+.header__hero {
+  height: 317px;
+}
+
+.card, .header__hero {
+  border-radius: 10px 10px 0px 0px;
+}
+
+
+.header {
+  display: flex;
+  flex-direction: column;
+}
+
+.header__container {
+  padding: 1.5em
+}
+
+.header__copy {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header__name {
+  color: #fff;
+  font-weight: 700;
+  font-size: 25px;
+}
+
+.header__job-title {
+  color: #F3BF99;
+  font-weight: 400;
+  line-height: 15px;
+  font-size: 13px;
+  margin-top: .2em;
+}
+
+.header__portfolio {
+  color: #f5f5f5;
+  font-weight: 400;
+  font-size: 10.2px;
+  line-height: 150%;
+  text-decoration: none;
+  margin-top: 1em;
+}
+
+.header__cta-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin: 1em 0 2em
+}
+
+a {
+  display: inline-block;
+  position: relative;
+  color: #fff;
+}
+
+a:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+a:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.btn {
+  padding: 9px 13px 9px 11px;
+  width: 110px;
+  height: 34px;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+  border-radius: 6px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 8px
+}
+
+.email {
+  color: #374151;
+  border: 1px solid #D1D5DB;
+}
+
+.linkedin {
+  background-color: #5093E2;
+  color: #fff;
+}
+
