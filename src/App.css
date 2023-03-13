@@ -5,7 +5,7 @@
   border: 0;
 }
 
-body {
+html, body {
   height: 100%;
   font-family: 'Inter', sans-serif;
 }
@@ -206,4 +206,8 @@ a, a:visited {
   .interests, .about {
     padding-bottom: 1.3em;
   }
+}
+
+@media screen and (max-width: 375px) {
+
 }
