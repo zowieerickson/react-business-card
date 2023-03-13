@@ -118,11 +118,19 @@ a, a:visited {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 8px
+  gap: 8px;
+  transition: all 0.2s;
 }
 
-button:hover {
+.btn:hover {
   cursor: pointer;
+    transform: translateY(-3px);
+    box-shadow: 0 1rem 2rem rgb(0 0 0 / 20%);
+}
+
+.btn:active {
+  transform: translateY(-1px);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
 }
 
 .email {
