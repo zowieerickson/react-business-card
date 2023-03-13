@@ -75,13 +75,13 @@ html, body {
   margin: 1em 0 2em
 }
 
-a {
+.underline-animation {
   display: inline-block;
   position: relative;
   color: #fff;
 }
 
-a:after {
+.underline-animation:after {
   content: '';
   position: absolute;
   width: 100%;
@@ -94,9 +94,17 @@ a:after {
   transition: transform 0.25s ease-out;
 }
 
-a:hover:after {
+.underline-animation:hover:after {
   transform: scaleX(1);
   transform-origin: bottom left;
+}
+
+.filter-blue {
+  filter: invert(100%) sepia(100%) saturate(2%) hue-rotate(214deg) brightness(108%) contrast(101%);
+}
+
+a, a:visited {
+  text-decoration: none;
 }
 
 .btn {
@@ -110,6 +118,10 @@ a:hover:after {
   justify-content: center;
   align-items: center;
   gap: 8px
+}
+
+button:hover {
+  cursor: pointer;
 }
 
 .email {
