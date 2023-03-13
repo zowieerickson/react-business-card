@@ -14,7 +14,7 @@ function Info() {
                 </div>
                 <div className="header__cta-buttons">
                     <a href="mailto:zowie.erickson@gmail.com"><button className="btn email"><img src={EmailIcon} alt="Email icon" />Email</button></a>
-                    <a href=""><button className="btn linkedin"><img src={LinkedinIcon} className="filter-blue" alt="Linkedin icon" />LinkedIn</button></a>
+                    <a href=""><button className="btn linkedin"><img src={LinkedinIcon} className="filter-blue linkedin-icon" alt="Linkedin icon" />LinkedIn</button></a>
                 </div>
             </div>
         </header>
